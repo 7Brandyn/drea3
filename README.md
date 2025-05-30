@@ -1,2 +1,2 @@
 # drea3
-Our AuraHouse event
+An AuraHouse event
