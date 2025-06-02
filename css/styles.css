@@ -6,10 +6,14 @@
 
 body {
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    background-color: black;
-    color: #e7e7e7;
+    background-color: white;
+    color: #464646;
     min-height: 100vh;
     line-height: 1.5;
+}
+
+h1, p, a {
+    text-shadow: 0 0 8px rgba(77, 77, 77, 0.418);
 }
 
 /* gradient blue n stuff */
@@ -46,7 +50,6 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 1rem 5rem;
-    z-index: 999;
 }
 
 header h1 {
@@ -60,6 +63,7 @@ nav {
     align-items: center;
     gap: 3rem;
     margin-left: -5%;
+    z-index: 999;
 }
 
 nav a {
@@ -68,10 +72,13 @@ nav a {
     transition: color 0.2s ease;
     text-decoration: none;
     color: inherit;
+    font-weight: 500;
+    text-shadow: 0 0 5px #ffffff;
 }
 
 nav a:hover {
-    color: #a7a7a7;
+    color: #b6b6b6;
+    text-shadow: 0 0 8px rgb(255, 255, 255, 1);
 }
 
 .btn-signing {
@@ -84,6 +91,7 @@ nav a:hover {
     font-weight: 500;
     transition: background-color 0.2s ease;
     cursor: pointer;
+    z-index: 1;
 }
 
 .btn-signing:hover {
@@ -108,7 +116,7 @@ main {
     width: 18rem;
     height: 2.5rem;
     border-radius: 50px;
-    background: linear-gradient(to right, #656565, #7f42a7, #6600c5, #5300a0, #757575, #656565);
+    background: linear-gradient(to right, #ff0000, #d9ff00, #1eff00, #0004ff, #414141, #9c9c9c, #919191);
     background-size: 200%;
     animation: animationGradient 2.5s linear infinite;
     box-shadow: 0 0 15px rgba(255, 255, 255, 0.3);
@@ -123,8 +131,11 @@ main {
 .tag-box .tag {
     position: absolute;
     inset: 3px 3px 3px 3px;
-    background-color: black;
+    background-color: rgb(173, 173, 173);
     border-radius: 50px;
+    color: white;
+    font-weight: 500;
+    letter-spacing: 4px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -133,7 +144,7 @@ main {
 }
 
 .tag-box .tag:hover {
-    color: #5300a0;
+    color: #000000;
 }
 
 .content h1 {
@@ -142,7 +153,6 @@ main {
     letter-spacing: 0.1em;
     margin: 2rem 0;
     line-height: 1.2;
-    text-shadow: 0 0 10px rgba(128, 128, 128, 0.418);
 }
 
 .description {
@@ -187,4 +197,82 @@ main {
 
 .btn-signing-main:hover {
     background-color: gray;
+}
+
+.blob {
+    position: absolute;
+    top: 0;
+}
+
+#logo {
+    display: none !important
+}
+
+/* TABLET */
+@media (max-width: 1300px) {
+    header {
+        padding: 1rem 0.5rem;
+    }
+
+    .content {
+        margin-top: 85%;
+    }
+
+    .robot-3d {
+        scale: 0.8;
+        top: -20%;
+    }
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+    header {
+        padding: 1rem 0.1rem;
+    }
+
+    nav {
+        display: none;
+    }
+
+    header h1 {
+        font-size: 2rem;
+    }
+
+    .btn-signing {
+        padding: 0.6rem 1.5rem;
+    }
+
+    .content {
+        margin-top: 25rem;
+        max-width: 30rem;
+        margin-left: 10%;
+    }
+
+    .content h1 {
+        font-size: 1rem;
+    }
+
+    .blob {
+        scale: 0.5;
+        top: -25%;
+        right: 0;
+    }
+
+    .tag-box {
+        width: 12rem;
+    }
+
+    .description {
+        font-size: 1rem;
+    }
+
+    .btn-get-started {
+        font-size: 0.8rem;
+        padding: 0.5rem 1.2rem;
+    }
+
+    .btn-signing-main {
+        font-size: 0.8rem;
+        padding: 0.8rem 2rem;
+    }
 }

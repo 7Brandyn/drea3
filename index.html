@@ -3,50 +3,67 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <title>DREA-3 Space</title>
     <link rel="stylesheet" href="./css/styles.css">
+    
 </head>
 
 <body>
-    <img class="image-gradient" src="./images/gradient.png" alt="gradient">
-    <div class="layer-blur"></div>
+    <!-- <img class="image-gradient" src="./images/gradient.png" alt="gradient"> -->
+    <!-- <div class="layer-blur"></div> -->
 
     <div class="container">
         
         <header>
-            <h1 class="logo">DREA-3</h1>
+            <h1 data-aos="fade-down" data-aos-duration="500" class="logo">DREA-3</h1>
 
             <nav>
-                <a href="#">EVENTS</a>
-                <a href="#">PHOTOS</a>
-                <a href="#">SOUND</a>
-                <a href="#">ABOUT</a>
+                <a data-aos="fade-down" data-aos-duration="1000" href="#">EVENTS</a>
+                <a data-aos="fade-down" data-aos-duration="1500" href="#">PHOTOS</a>
+                <a data-aos="fade-down" data-aos-duration="2000" href="#">SOUND</a>
+                <a data-aos="fade-down" data-aos-duration="2500" href="#">ABOUT</a>
             </nav>
 
-            <button class="btn-signing">SIGNING</button>
+            <button data-aos="fade-down" data-aos-duration="3000" class="btn-signing">SIGNING</button>
         </header>
             
         <main>
-            <div class="content">
+            <div data-aos="fade-zoom-in"
+                    data-aos-easing="ease-in-back"
+                    data-aos-delay="1000"
+                    data-aos-offset="0"
+                    data-aos-duration="2000" class="content">
+               
                 <div class="tag-box">
-                    <div class="tag">INTRODUCING &wedbar;</div>
+                    <div class="tag">BANDCAMP</div>
                 </div>
 
-                <h1>EMAIL FOR <br>DEVELOPERS</h1>
+                <h1>THE DREA-3 <br>EXPERIENCE</h1>
 
                 <p class="description">
-                    the best thing about descriptions is that you can edit them later.
+                    Unlock the Power of Dreams — Where Imagination Meets Infinite Possibilities
                 </p>
 
                 <div class="buttons">
                     <a href="#" class="btn-get-started">Documentation &gt;</a>
                     <a href="#" class="btn-signing-main">Get Started &gt;</a>
                 </div>
-                
             </div>
         </main>
+
+        <spline-viewer data-aos="fade-zoom-in"
+                    data-aos-easing="ease-in-back"
+                    data-aos-delay="1000"
+                    data-aos-offset="0"
+                    data-aos-duration="15000" class="blob" url="https://prod.spline.design/t2O9qvL8J1sOoxQf/scene.splinecode"></spline-viewer>
     </div>
 
     <script src="./js/script.js"></script>
+    <script type="module" src="https://unpkg.com/@splinetool/viewer@1.9.98/build/spline-viewer.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+    AOS.init();
+  </script>
 </body>
 </html>
