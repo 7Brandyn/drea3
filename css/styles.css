@@ -16,6 +16,10 @@ h1, p, a {
     text-shadow: 0 0 8px rgba(77, 77, 77, 0.418);
 }
 
+p {
+    font-family: monospace;
+}
+
 /* gradient blue n stuff */
 
 .image-gradient {
@@ -54,8 +58,8 @@ header {
 
 header h1 {
     margin: 0;
-    font-size: 3rem;
-    font-weight: 300;
+    font-size: 2rem;
+    font-weight: 700;
 }
 
 nav {
@@ -119,7 +123,7 @@ main {
     background: linear-gradient(to right, #ff0000, #d9ff00, #1eff00, #0004ff, #414141, #9c9c9c, #919191);
     background-size: 200%;
     animation: animationGradient 2.5s linear infinite;
-    box-shadow: 0 0 15px rgba(255, 255, 255, 0.3);
+    box-shadow: 0 0 15px rgba(53, 53, 53, 0.466);
 }
 
 @keyframes animationGradient {
@@ -131,7 +135,7 @@ main {
 .tag-box .tag {
     position: absolute;
     inset: 3px 3px 3px 3px;
-    background-color: rgb(173, 173, 173);
+    background-color: rgb(110, 110, 110);
     border-radius: 50px;
     color: white;
     font-weight: 500;
@@ -145,6 +149,8 @@ main {
 
 .tag-box .tag:hover {
     color: #000000;
+    background-color: rgb(238, 238, 238);
+    animation: none;
 }
 
 .content h1 {
@@ -152,7 +158,7 @@ main {
     font-weight: 600;
     letter-spacing: 0.1em;
     margin: 2rem 0;
-    line-height: 1.2;
+    line-height: 1;
 }
 
 .description {
@@ -176,7 +182,7 @@ main {
     font-size: 1.2rem;
     font-weight: 600;
     letter-spacing: 0.1em;
-    transition: background-color 0.2s ease;
+    transition: background-color 0.8s ease;
 }
 
 .btn-get-started:hover {
@@ -192,16 +198,18 @@ main {
     font-size: 1.2rem;
     font-weight: 600;
     letter-spacing: 0.1em;
-    transition: background-color 0.2s ease;
+    transition: background-color 0.8s ease;
 }
 
 .btn-signing-main:hover {
-    background-color: gray;
+    background-color: rgb(90, 90, 90);
+    color: rgb(238, 238, 238);
 }
 
 .blob {
-    position: absolute;
+    position: fixed;
     top: 0;
+    right: -20%;
 }
 
 #logo {
@@ -275,4 +283,59 @@ main {
         font-size: 0.8rem;
         padding: 0.8rem 2rem;
     }
+}
+
+#playPauseBtn {
+    z-index: 999;
+    font-size: 1.5em;
+    padding: 10px 20px;
+    cursor: pointer;
+    background: none;
+    border: none;
+}
+
+#scroll-container {
+    font-family: monospace;
+    white-space: nowrap;
+    position: fixed;
+    width: 100%;
+    bottom: 1%;
+    overflow: hidden;
+}
+
+#scroll-text {
+    color: #919191;
+    /* animation properties */
+    -moz-transform: translateX(100%);
+    -webkit-transform: translateX(100%);
+    transform: translateX(100%);
+    
+    -moz-animation: my-animation 30s linear infinite;
+    -webkit-animation: my-animation 30s linear infinite;
+    animation: my-animation 30s linear infinite;
+}
+
+/* for Firefox */
+@-moz-keyframes my-animation {
+    from { -moz-transform: translateX(100%); }
+    to { -moz-transform: translateX(-100%); }
+}
+
+/* for Chrome */
+@-webkit-keyframes my-animation {
+    from { -webkit-transform: translateX(100%); }
+    to { -webkit-transform: translateX(-100%); }
+}
+
+@keyframes my-animation {
+  from {
+    -moz-transform: translateX(100%);
+    -webkit-transform: translateX(100%);
+    transform: translateX(100%);
+  }
+  to {
+    -moz-transform: translateX(-100%);
+    -webkit-transform: translateX(-100%);
+    transform: translateX(-100%);
+  }
 }
