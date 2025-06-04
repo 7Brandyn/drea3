@@ -34,7 +34,7 @@ sub {
 }
 
 header {
-    
+
 }
 
 .image-gradient {
@@ -313,6 +313,7 @@ main {
     .overlay .closebtn {
         font-size: 40px;
         right: 35px;
+        top: 80vh;
     }
 
     nav {
@@ -335,6 +336,8 @@ main {
 
     #playPauseBtn {
         padding-bottom: 4vh;
+        width: 100%;
+        height: auto;
     }
 }
 
