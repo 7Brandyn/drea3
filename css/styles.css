@@ -212,6 +212,16 @@ main {
     right: -20%;
 }
 
+sub {
+    position: relative;
+    color: rgb(241, 241, 241);
+    right: 46px;
+}
+
+.logo {
+    filter: drop-shadow(0 0 2px #000000);
+}
+
 .logo a {
     font-family: monospace;
     display: flex;
@@ -224,7 +234,8 @@ main {
 
 .logoimg {
     max-width: 64px;
-    height: auto;}
+    height: auto;
+}
 
 #logo {
     display: none !important
