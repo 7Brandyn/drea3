@@ -252,7 +252,6 @@ main {
 
 /* TABLET */
 @media screen and (max-width: 1300px) {
-
     header {
         padding: 1rem 0.1rem;
     }
@@ -262,29 +261,38 @@ main {
     }
 
     header h1 {
-        font-size: 2rem;
+        font-size: 4rem;
     }
 
     span {
         display: block;
     }
+
+    main {
+        align-items: center;
+    }
+
     .btn-signing {
         padding: 0.6rem 1.5rem;
     }
 
     .content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
         margin-top: 25rem;
         max-width: 30rem;
         margin-left: 10%;
+        margin-right: 10%;
     }
 
     .content h1 {
-        font-size: 1rem;
+        font-size: clamp(2rem, 5vw, 4rem);
     }
 
     .blob {
-        scale: 0.5;
-        top: -25%;
+        top: -20%;
         right: 0;
     }
 
