@@ -15,7 +15,8 @@
 <body>
 
     <div class="container">
-        <header>
+        <header id="myNav" class="overlay">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
             <div data-aos="fade-down" data-aos-duration="500" class="logo">
                 <a href="./index.html">
                     <img src="./media/saturn.png" alt="logo" class="logoimg">
@@ -23,17 +24,19 @@
                 </a>
             </div>
             
-            <nav>
+            <nav class="navigator">
                 <a data-aos="fade-down" data-aos-duration="1000" href="#">ABOUT</a>
                 <a data-aos="fade-down" data-aos-duration="1500" href="#">EVENTS</a>
                 <a data-aos="fade-down" data-aos-duration="2000" href="#">SOUND</a>
                 <a data-aos="fade-down" data-aos-duration="2500" href="#">INSTAGRAM</a>
             </nav>
 
-    <audio id="audio" src="./media/Natur.mp3"></audio>
-    <button id="playPauseBtn">❚❚</button>
+            <audio id="audio" src="./media/Natur.mp3"></audio>
+            <button id="playPauseBtn">❚❚</button>
 
         </header>
+        <span onclick="openNav()">open</span>
+        
         <main>
             <div data-aos="fade-zoom-in"
                     data-aos-easing="ease-in-back"
