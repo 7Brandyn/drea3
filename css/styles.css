@@ -28,9 +28,10 @@ span {
 }
 
 sub {
+    font-family: "Exo 2", sans-serif;
     position: relative;
     color: rgb(241, 241, 241);
-    right: 46px;
+    right: 64px;
 }
 
 header {
@@ -78,6 +79,7 @@ header h1 {
 }
 
 nav {
+    font-family: "Exo 2", sans-serif;
     display: flex;
     align-items: center;
     gap: 3rem;
@@ -128,6 +130,10 @@ main {
     max-width: 40rem;
     margin-left: 10%;
     z-index: 9;
+}
+
+.content h1 {
+    font-family: "Exo 2", sans-serif;
 }
 
 .tag-box {
